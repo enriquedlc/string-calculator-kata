@@ -28,4 +28,9 @@ describe("string calculator", () => {
 
     expect(result).toBe(10)
   })
+  it("returns the sum of some numbers", () => {
+    const result = add("1,2,3")
+
+    expect(result).toBe(6)
+  })
 })
