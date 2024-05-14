@@ -1,4 +1,5 @@
 import { describe, it, expect } from "vitest"
+
 import { add } from "./main.js"
 
 describe("string calculator", () => {
@@ -6,5 +7,10 @@ describe("string calculator", () => {
     const result = add("")
 
     expect(result).toBe(0)
+  })
+  it("returns the value passed by parameter", () => {
+    const result = add("1")
+
+    expect(result).toBe(1)
   })
 })
