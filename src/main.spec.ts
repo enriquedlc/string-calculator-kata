@@ -18,4 +18,9 @@ describe("string calculator", () => {
 
     expect(result).toBe(3)
   })
+  it("returns the sum by 2 digit number", () => {
+    const result = add("10,20")
+
+    expect(result).toBe(30)
+  })
 })
