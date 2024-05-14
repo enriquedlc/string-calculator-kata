@@ -33,4 +33,9 @@ describe("string calculator", () => {
 
     expect(result).toBe(6)
   })
+  it("allows new line as separator ", () => {
+    const result = add("1\n2,3,")
+
+    expect(result).toBe(6)
+  })
 })
