@@ -1,10 +1,10 @@
-export function add(numbers: string): number {
-  const splittedStringNumbers = numbers.split(",")
+function sum(a: number, b: number) {
+  return a + b
+}
 
-  if (splittedStringNumbers.length > 1) {
-    const numbersArray = splittedStringNumbers.map((n) => Number(n))
-    return numbersArray.reduce((a, b) => a + b, 0)
-  }
-  if (splittedStringNumbers.length === 1) return Number(splittedStringNumbers[0])
-  return 0
+export function add(numbers: string): number {
+  return numbers
+    .split(",")
+    .map((n) => Number(n))
+    .reduce(sum, 0)
 }
