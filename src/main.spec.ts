@@ -23,4 +23,9 @@ describe("string calculator", () => {
 
     expect(result).toBe(30)
   })
+  it("returns the number provided", () => {
+    const result = add("10")
+
+    expect(result).toBe(10)
+  })
 })
