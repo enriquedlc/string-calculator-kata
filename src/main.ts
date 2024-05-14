@@ -4,7 +4,7 @@ function sum(a: number, b: number) {
 
 function parse(input: string) {
   if (input.startsWith("//")) {
-    return [";", "1;2"]
+    return [input[2], input.substring(3)]
   }
   const delimiter = ","
   const body = input

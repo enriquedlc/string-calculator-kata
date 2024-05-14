@@ -43,4 +43,9 @@ describe("string calculator", () => {
 
     expect(result).toBe(3)
   })
+  it("allows to customize the delimiter", () => {
+    const result = add("//*\n2*2")
+
+    expect(result).toBe(4)
+  })
 })
