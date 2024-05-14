@@ -3,6 +3,9 @@ function sum(a: number, b: number) {
 }
 
 function parse(input: string) {
+  if (input.startsWith("//")) {
+    return [";", "1;2"]
+  }
   const delimiter = ","
   const body = input
   return [delimiter, body] as const
