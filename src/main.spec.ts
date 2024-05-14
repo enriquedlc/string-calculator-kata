@@ -8,22 +8,22 @@ describe("string calculator", () => {
 
     expect(result).toBe(0)
   })
-  it("returns the value passed by parameter", () => {
+  it("returns a single number", () => {
     const result = add("1")
 
     expect(result).toBe(1)
   })
-  it("returns the sum", () => {
+  it("returns the sum of two numbers", () => {
     const result = add("1,2")
 
     expect(result).toBe(3)
   })
-  it("returns the sum by 2 digit number", () => {
+  it("returns the sum of two numbers of two digits", () => {
     const result = add("10,20")
 
     expect(result).toBe(30)
   })
-  it("returns the number provided", () => {
+  it("returns a number of two digits", () => {
     const result = add("10")
 
     expect(result).toBe(10)
