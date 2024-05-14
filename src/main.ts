@@ -1,10 +1,10 @@
 export function add(numbers: string): number {
-  const splittedNumbers = numbers.split(",")
+  const splittedStringNumbers = numbers.split(",")
 
-  if (splittedNumbers.length > 1) {
-    const numArray = splittedNumbers.map((n) => Number(n))
-    return numArray.reduce((a, b) => a + b, 0)
+  if (splittedStringNumbers.length > 1) {
+    const numbersArray = splittedStringNumbers.map((n) => Number(n))
+    return numbersArray.reduce((a, b) => a + b, 0)
   }
-  if (splittedNumbers.length === 1) return Number(splittedNumbers[0])
+  if (splittedStringNumbers.length === 1) return Number(splittedStringNumbers[0])
   return 0
 }
